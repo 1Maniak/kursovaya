@@ -12,6 +12,9 @@ header {
     padding: 5px 10px;
     color: white;
     width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .cite-logo {
@@ -95,7 +98,9 @@ a:hover::after {
 }
 
 @media (max-width: 768px) {
-    .container { width: 100%; padding: 0 10px; }
-    .sidebar { display: none; } /* Скрыть неважное */
-    .content { width: 100%; }
+    body { font-size: 14px; }
+}
+
+@media (max-width: 480px) {
+    body { font-size: 12px; }
 }
