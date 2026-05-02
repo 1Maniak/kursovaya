@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+}
+
+body { 
+    font-family: Arial, sans-serif; 
+}
+
+header {
+    display: flex;
+    background-image: linear-gradient(to right, #00c6ff, #0072ff, #004e92);
+    padding: 5px 10px;
+    color: white;
+    width: 100%;
+}
+
+.cite-logo {
+    max-width: 70px;
+    height: auto;
+    margin-left: 30px;
+    display: block;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 10px;
+    width: 100%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding: 5px 10px;
+    font-weight: bold;
+    z-index: 1;
+    display: inline-block;
+    transition: all 0.5s;
+}
+
+a:hover {
+    transform: translateY(-3px);
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+
+    background-image: radial-gradient(circle, #2196f3, #0d47a1);
+    
+    opacity: 0;
+    z-index: -1;
+    border-radius:  10px;
+    transition: opacity 0.7s ease;
+}
+
+a:hover::after {
+    opacity: 1;
+}
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+.burger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .burger-menu {
+        display: block;
+    }
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+    }
+    .nav-menu.active{
+        display: block;
+    }
+}
