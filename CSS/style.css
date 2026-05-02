@@ -3,6 +3,11 @@ body {
     font-size: 16px;
     font-weight: 400;
     color: white; 
+    background-image: url(../photo/fone2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 * {
@@ -23,6 +28,7 @@ body {
 }
 
 .header-content img {
+    margin: 0 auto;
     height: 100px;
     position: absolute;
     left: 50%;
@@ -31,7 +37,7 @@ body {
 
 .container {
     display: flex;
-    background-image: linear-gradient(to right, #00c6ff, #0072ff, #004e92);
+    background-image: radial-gradient( #00c6ff,  #0072ff, #004e92);
     padding: 5px 10px;
     color: white;
     width: 100%;
@@ -59,7 +65,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 70px;
+    gap: 80px;
     padding: 10px;
     width: 100%;
     min-width: 0; 
@@ -74,6 +80,10 @@ body {
     font-weight: bold;
     z-index: 1;
     transition: all 0.5s;
+}
+
+.nav-left a:last-of-type {
+    margin-right: 0;
 }
 
 .nav-left a:hover {
@@ -110,6 +120,10 @@ body {
     transition: all 0.5s;
 }
 
+.nav-right a:last-of-type {
+    margin-right: 0;
+}
+
 .nav-right a:hover {
      transform: translateY(-3px);
 }
@@ -131,13 +145,6 @@ body {
     opacity: 1;
 }
 
-.header-login {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    position: fixed;
-    right: 0;
-}
 
 
 
@@ -148,14 +155,28 @@ body {
 .main {
     text-align: center;
     padding: 90px;
-    color: black
 }
 
+.text-gradient {
+    /* Обводка */
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+    display: inline-block;
+}
 
+.text-gradient h1 {
+     /* Градиент */
+    background-image: radial-gradient( #2196f3, #0d47a1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
 
-
-
-
+.text-container {
+    margin-top: 800px;
+}
 
 
 
