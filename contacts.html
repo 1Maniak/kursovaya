@@ -13,9 +13,9 @@
         <div class="header-content">
             <div class="nav-container">
                 <nav class="nav-left">
-                    <a href="#rgutits">РГУТИС</a>
-                    <a href="#teachers">Преподаватели</a>
-                    <a href="#documents">Подать документы</a>
+                    <a href="/rgutis.html">РГУТИС</a>
+                    <a href="/teachers.html">Преподаватели</a>
+                    <a href="/documents.html">Подать документы</a>
                 </nav>
             </div>
             <img src="photo/logo.png" alt="Логотип компании">
@@ -31,8 +31,35 @@
 
     <main>
 
-        <section>
+        <section class="section-contact">
+
+            <div class="text-contacts">
+                    <h2>Контакты | Обратная связь</h2>
+                </div>    
             
+            <form action="send.php" method="POST" class="text-obrat">
+
+                <div class="text-obrat2">
+                    <h1>Свяжитесь с нами</h1>
+                    <h3>Мы всегда рады ответить на ваши вопросы</h3>
+                </div>
+                
+                    <input type="text" name="name" placeholder="Ваше имя" required>
+                    <input type="email" name="email" placeholder="Ваш Email" required>
+                    <textarea name="message" placeholder="Ваше сообщение" rows="5" required></textarea>
+                    <button type="submit">Отправить</button>
+                
+                <!-- <div class="text-contact">
+                    <h3>Контакты | Обратная связь</h3>
+                </div>
+                <div class="text-obrat">
+                    <h1>Свяжитесь с нами</h1>
+                </div>
+
+                <div class="text-obrat2">
+                    <h3>Мы всегда рады ответить на ваши вопросы</h3>
+                </div> -->
+            </form>
         </section>
 
     </main>

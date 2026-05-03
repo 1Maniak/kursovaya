@@ -30,10 +30,13 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-image: radial-gradient( #00c6ff,  #0072ff, #004e92); /* Полупрозрачный черный фон */
+    background-image: radial-gradient( #00c6ff,  #0072ff, #004e92);
     padding: 20px 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    z-index: 1000; /* Убеждаемся, что меню поверх всего */
+    z-index: 1000; 
+
+    /* ЧТО БЫ DIV НЕ ПРОВАЛИВАЛСЯ */
+    height: 100px;
 }
 
 .main-menu .header-content {
@@ -106,6 +109,13 @@ body {
 }
 
 /* ---- MAIN ---- */
+
+main {
+    flex: 1 0  auto;
+
+    /* ЧТО БЫ DIV НЕ ПРОВАЛИВАЛСЯ */
+    padding-top: 100px;
+}
 
 .hero-section {
     position: relative;
