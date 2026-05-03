@@ -6,8 +6,16 @@ body {
     color: white;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Предотвращаем горизонтальную прокрутку */
-    background-color: #121212; /* Темный фон для всего документа, если не перекрывается секциями */
+    overflow-x: hidden;
+    background-color: #121212; 
+
+    /* ДЛЯ ФУТЕРА */
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* ДЛЯ ФУТЕРА */
 }
 
 *, ::before, ::after {
@@ -73,7 +81,7 @@ body {
 .nav-left a:hover,
 .nav-right a:hover {
     transform: translateY(-3px);
-    color: #00bcd4;
+    color: #fff;
     text-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
 }
 
@@ -97,7 +105,7 @@ body {
     width: 100%;
 }
 
-/* ---- СЕКЦИЯ ДЛЯ ГЛАВНОГО ЭКРАНА ---- */
+/* ---- MAIN ---- */
 
 .hero-section {
     position: relative;
@@ -146,7 +154,7 @@ body {
     font-size: clamp(2em, 2.5vw, 3.5em); /* Адаптивный размер шрифта */
     margin-bottom: 30px;
     color: #e0e0e0;
-    text-shadow: 0 0 15px rgba(3, 64, 179, ); /* Некое свечение */
+    text-shadow: 0 0 15px rgba(3, 64, 179, 0); /* Некое свечение */
 }
 
 .hero-section p {
@@ -187,15 +195,22 @@ body {
     opacity: 0.9;
 }
 
+
+main {
+    flex: 1 0 auto;
+}
+
+
 /* Футер */
 .footer {
     background-color: #101010; /* Очень темный фон для футера */
     color: #bbb;
-    padding: 60px 20px;
+    padding: 30px 30px;
     text-align: center;
     border-top: 2px solid #0d47a1;
     position: relative;
     z-index: 1;
+    flex-shrink: 0;
 }
 
 .footer p {
