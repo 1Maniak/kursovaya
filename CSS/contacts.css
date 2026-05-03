@@ -277,15 +277,19 @@ main {
 }
 
 
-.contacts-item1,
-.contacts-item2,
-.contacts-item3,
+.contacts-item2 p,
+.contacts-item3 p,
 .contact-adress p{
     font-size: 1em;
     text-align: center;
+    margin-top: 10px;
 }
 
-
+.contacts-item1 p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1em;
+}
 
 
 
