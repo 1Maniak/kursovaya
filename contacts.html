@@ -33,33 +33,50 @@
 
         <section class="section-contact">
 
-            <div class="text-contacts">
-                    <h2>Контакты | Обратная связь</h2>
-                </div>    
-            
-            <form action="" method="POST" class="text-obrat">
+            <div class="container-form">
 
-                <div class="text-obrat2">
-                    <h1>Свяжитесь с нами</h1>
-                    <h3>Мы всегда рады ответить на ваши вопросы</h3>
-                </div>
-                
+                    <div class="text-contacts">
+                        <h2>Контакты | Обратная связь</h2>
+                    </div>    
+
+                    <section  class="contacts">
+                        <div class="contacts-item">
+                            <div class="contacts-item1"><h2>Общий отдел</h2><p>+7 (495) 940 83 00</p></div>
+                            <div class="contacts-item2"><h2>Электронная почта</h2><p>info@rguts.ru</p><p>obrashenia@rguts.ru</p></div>
+                            <div class="contacts-item3"><h2>Режим работы университета</h2><p>пн-чт: с 09:00 до 18:00;</p><p>пт: с 09:00 до 16:45;</p>
+                        </div>
+                    </section>
+
+                    <div class="contact-adress">
+                        <h1>Адрес Университета</h1>
+                        <p>
+                            141221, Московская обл., Городской округ Пушкинский, пгт. Черкизово, ул. Главная, 99
+                        </p>
+                    </div>
+
+                <form onsubmit="alert('Спасибо! Заявка отправлена.'); return true;" class="text-obrat">
+
+                    <div class="text-obrat2">
+                        <h1>Форма обратной связи</h1>
+                        <h3>Мы всегда рады ответить на ваши вопросы</h3>
+                    </div>
+
                     <input type="text" name="name" placeholder="Ваше имя" required>
-                    <input type="email" name="email" placeholder="Ваш Email" required>
+                    <input type="tel" id="phone" value="+7" onfocus="if(this.value==='') this.value='+7';" />
                     <textarea name="message" placeholder="Ваше сообщение" rows="5" required></textarea>
                     <button type="submit">Отправить</button>
                 
-                <!-- <div class="text-contact">
-                    <h3>Контакты | Обратная связь</h3>
-                </div>
-                <div class="text-obrat">
-                    <h1>Свяжитесь с нами</h1>
-                </div>
+                    <script src="form-contact.js"></script>
 
-                <div class="text-obrat2">
-                    <h3>Мы всегда рады ответить на ваши вопросы</h3>
-                </div> -->
-            </form>
+                </form>
+
+                
+                
+            </div>
+
+            
+            
+
         </section>
 
     </main>
