@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Личный кабинет</title>
-     <link rel="stylesheet" href="CSS/cabinet.css">
+    <link rel="stylesheet" href="CSS/login.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="photo/logo.ico" type="image/x-icon">
 </head>
 <body>
     
@@ -23,7 +24,7 @@
                 <nav class="nav-right">
                     <a href="index.html">Главная</a>
                     <a href="contacts.html">Контакты</a>
-                    <a href="cabinet.html">Личный кабинет</a>
+                    <a href="login.html">Личный кабинет</a>
                 </nav>
             </div>
         </div>
@@ -34,24 +35,33 @@
         <section class="section-contact">
 
             <div class="text-contacts">
-                <h2>Личный кабинет</h2>
+                <h2>Личный кабинет - Вход</h2>
             </div> 
 
-            <form onsubmit="alert('Спасибо! Заявка отправлена.'); return true;" class="text-obrat">
-
-                    <div class="text-obrat2">
-                        <h1>Форма обратной связи</h1>
-                        <h3>Мы всегда рады ответить на ваши вопросы</h3>
-                    </div>
-
-                    <input type="text" name="name" placeholder="Ваше имя" required>
-                    <input type="tel" id="phone" value="+7" onfocus="if(this.value==='') this.value='+7';" />
-                    <textarea name="message" placeholder="Ваше сообщение" rows="5" required></textarea>
-                    <button type="submit">Отправить</button>
+            <form class="login-form">
+                <div class="login-form2">
+                    <h1><a href="login.html">Вход</a></h1>
+                    <h1>|</h1>
+                    <h1><a href="register.html">Регистрация</a></h1>
+                </div>
+                <div class="form">
+                    <!-- ЛОГИН -->
+                    <input class="big-input" type="text" name="name" placeholder="Логин" required>
                 
-                    <script src="form-contact.js"></script>
-
-                </form>
+                    <!-- ПАРОЛЬ -->
+                    <div class="password-container">
+                        <label class="visually-hidden" for="password"></label>
+                        <input type="password" id="password" class="password-input" placeholder="Введите пароль">
+                        <button type="button" class="password-button">
+                            <span class="visually-hidden password-button__text">Показать</span>
+                        </button>
+                    </div>
+                
+                    <!-- КНОПКА -->
+                    <button class="button-login" type="submit">Войти</button>
+                </div>
+                    <script src="login.js"></script>
+            </form>
 
         </section>
 

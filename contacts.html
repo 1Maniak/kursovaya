@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты</title>
-     <link rel="stylesheet" href="CSS/contacts.css">
+    <link rel="stylesheet" href="CSS/contacts.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fontawesome.ru">
+    <link rel="icon" href="photo/logo.ico" type="image/x-icon">
 </head>
-
 <body>
     
     <header class="main-menu">
@@ -25,7 +24,7 @@
                 <nav class="nav-right">
                     <a href="index.html">Главная</a>
                     <a href="contacts.html">Контакты</a>
-                    <a href="cabinet.html">Личный кабинет</a>
+                    <a href="login.html">Личный кабинет</a>
                 </nav>
             </div>
         </div>
@@ -43,17 +42,17 @@
 
                     <section  class="contacts">
                         <div class="contacts-item">
-                            <div class="contacts-item1"><h2>Общий отдел</h2><p>+7 (495) 940 83 00</p></div>
-                            <div class="contacts-item2"><h2>Электронная почта</h2><p>info@rguts.ru</p><p>obrashenia@rguts.ru</p></div>
+                            <div class="contacts-item1"><h2>Общий отдел</h2><a href="tel:+74959408300" class="phone-link">+7 (495) 940 83 00</a></div>
+                            <div class="contacts-item2"><h2>Электронная почта</h2><a class="hr" href="mailto:info@rguts.ru">info@rguts.ru</a><a class="hr" href="mailto:obrashenia@rguts.ru">obrashenia@rguts.ru</a></div>
                             <div class="contacts-item3"><h2>Режим работы университета</h2><p>пн-чт: с 09:00 до 18:00;</p><p>пт: с 09:00 до 16:45;</p>
                         </div>
                     </section>
 
                     <div class="contact-adress">
                         <h1>Адрес Университета</h1>
-                        <p>
+                        <a href="https://yandex.ru/maps/-/CPWqATLl" target="_blank" class="map-link">
                             141221, Московская обл., Городской округ Пушкинский, пгт. Черкизово, ул. Главная, 99
-                        </p>
+                        </a>
                     </div>
 
                 <form onsubmit="alert('Спасибо! Заявка отправлена.'); return true;" class="text-obrat">
@@ -63,11 +62,11 @@
                         <h3>Мы всегда рады ответить на ваши вопросы</h3>
                     </div>
 
-                    <input type="text" name="name" placeholder="Ваше имя" required>
-                    <input type="tel" id="phone" value="+7" onfocus="if(this.value==='') this.value='+7';" />
-                    <textarea name="message" placeholder="Ваше сообщение" rows="5" required></textarea>
+                    <input class="big-input" type="text" name="name" placeholder="Ваше имя" required>
+                    <input class="big-input" type="tel" id="phone" value="+7" onfocus="if(this.value==='') this.value='+7';" />
+                    <textarea class="big-input" name="message" placeholder="Ваше сообщение" rows="5" required></textarea>
                     <button type="submit">Отправить</button>
-                
+                        
                     <script src="form-contact.js"></script>
 
                 </form>
