@@ -109,13 +109,41 @@ body {
 }
 
 
-/* MAIN */
+/* ---- MAIN ---- */
+
 main {
     flex: 1 0  auto;
 
     /* ЧТО БЫ DIV НЕ ПРОВАЛИВАЛСЯ */
     padding-top: 100px;
 }
+
+/* НАДПИСЬ ДОКУМЕНТЫ */
+.text-contacts {
+    padding: 15px;
+    margin-left: 90px;
+    margin-top: 50px;
+
+    position: relative;
+    text-decoration: none;
+}
+
+.text-contacts::before {
+  content: ''; 
+  position: absolute;
+  left: 0;
+  top: 10px;
+  bottom: 10px;
+  width: 6px;
+  background-color: #0072ff; 
+  border-radius: 2px; 
+} 
+
+.section-contact {
+    display: flex;
+    flex-direction: column;
+}
+/* НАДПИСЬ ДОКУМЕНТЫ */
 
 
 

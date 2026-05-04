@@ -23,6 +23,8 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+/* Общие стили */
+
 
 /* Фиксированная шапка */
 .main-menu {
@@ -56,7 +58,10 @@ body {
     margin: 0;
     transform: scale(1.3);
 }
+/* Фиксированная шапка */
 
+
+/* ----- НАВИГАЦИЯ ---- */
 .nav-container {
     display: flex;
     gap: 50px; /* Расстояние между левой и правой навигацией */
@@ -107,6 +112,10 @@ body {
 .nav-right a:hover::after {
     width: 100%;
 }
+/* ----- НАВИГАЦИЯ ---- */
+
+
+
 
 /* ---- MAIN ---- */
 
@@ -116,6 +125,40 @@ main {
     /* ЧТО БЫ DIV НЕ ПРОВАЛИВАЛСЯ */
     padding-top: 100px;
 }
+
+
+
+/* НАДПИСЬ КОНТАКТЫ | ОБРАТНАЯ СВЯЗЬ */
+.text-contacts {
+    padding: 15px;
+    margin-left: 90px;
+    margin-top: 50px;
+    top: 0;
+    left: 0;
+
+    position: absolute;
+    text-decoration: none;
+    z-index: 2;
+}
+
+.text-contacts::before {
+  content: ''; 
+  position: absolute;
+  left: 0;
+  top: 10px;
+  bottom: 10px;
+  width: 6px;
+  background-color: #0072ff; 
+  border-radius: 2px; 
+} 
+
+.section-contact {
+    display: flex;
+    flex-direction: column;
+}
+/* НАДПИСЬ КОНТАКТЫ | ОБРАТНАЯ СВЯЗЬ */
+
+
 
 .hero-section {
     position: relative;
@@ -180,6 +223,9 @@ main {
 }
 
 
+
+
+
 /* ---- ДРУГИЕ СЕКЦИИ ---- */
 .content-section {
     background-color: #1A1A1A; /* Более темный фон для других секций */
@@ -206,9 +252,9 @@ main {
 }
 
 
-main {
-    flex: 1 0 auto;
-}
+
+
+
 
 
 /* Футер */
