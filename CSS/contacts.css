@@ -48,6 +48,7 @@ body {
     width: 70%;
     max-width: 70%;
     margin-left: 300px;
+    margin-right: 300px;
     padding: 0 20px;
 }
 
@@ -78,15 +79,22 @@ body {
     justify-content: flex-end;
 
     font-weight: bold;
-    padding: 5px 10px;
+    padding: 4px 5px;
     z-index: 1;
     transition: transform 0.4s ease-out, color 0.4s ease-out;
-    letter-spacing: 0.5px;
+    /* letter-spacing: 0.5px; */
+}
+
+.login-header_1 {
+    border: 2px solid #fff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
 
 
 .login-header a:hover {
-    transform: translateY(-3px);
+    /* transform: translateY(-3px); */
     color: #fff;
     text-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
 }
@@ -173,6 +181,7 @@ body {
 main {
     flex: 1 0  auto;
     width: 100%;
+    background-color: #1A1A1A;
 
     /* ЧТО БЫ DIV НЕ ПРОВАЛИВАЛСЯ */
     padding-top: 100px;
@@ -411,12 +420,88 @@ a[href^="mailto:"]:hover {
 
 
 
+.social-icons {
+    display: flex;
+    gap: 50px;
+    /* justify-content: center; */
+    margin-left: 57%;
+    /* margin-top: 20px; */
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    transition: all 0.3s ease; /* Плавная анимация */
+    /* box-shadow: 5px 5px 15px rgba(119, 119, 119, 0.9); */
+}
+
+/* Эффект наведения (hover) */
+.icon:hover {
+    transform: scale(1.1); /* Увеличение */
+    /* box-shadow: 0 4px 8px rgba(0,0,0,0.2); */
+    box-shadow: 5px 5px 15px rgba(119, 119, 119, 0.6); 
+}
+
+
+/* КАРТА С ПОЛОСКОЙ */
+.theme_dark_map {
+    filter: invert(0.9) hue-rotate(180deg) brightness(0.8) contrast(1.2);
+}
+
+.map {
+    margin-top: 150px;
+    background-color: #1A1A1A;
+}
+
+.line {
+    display: flex;
+    width: 70%;
+    height: 2px; /* Толщина центральной части */
+    background: linear-gradient(
+    to right,
+    transparent 0%,
+    #00c6ff 50%, 
+    #004e92 80%, 
+    transparent 100%);
+    border: none;
+    /* margin-bottom: 70px; */
+    margin-left: 18%;
+    margin-top: 220px;
+    padding: 2px;
+}
+
+.text-map_main {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    margin-top: 45px;
+    margin-left: 45%;
+
+    background-color: rgba(0.9);
+    box-shadow: 5px 5px 15px rgba(119, 119, 119, 0.9);
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.map-text {
+    color: #fff;
+    font-size: 1.9em;
+}
+/* КАРТА С ПОЛОСКОЙ */
+
 
 /* Футер */
 .footer {
     background-color: #101010; /* Очень темный фон для футера */
     color: #bbb;
-    padding: 30px 30px;
+    padding: 20px 30px;
     text-align: center;
     border-top: 2px solid #0d47a1;
     position: relative;

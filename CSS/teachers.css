@@ -78,15 +78,22 @@ body {
     justify-content: flex-end;
 
     font-weight: bold;
-    padding: 5px 10px;
+    padding: 4px 5px;
     z-index: 1;
     transition: transform 0.4s ease-out, color 0.4s ease-out;
-    letter-spacing: 0.5px;
+    /* letter-spacing: 0.5px; */
+}
+
+.login-header_1 {
+    border: 2px solid #fff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
 
 
 .login-header a:hover {
-    transform: translateY(-3px);
+    /* transform: translateY(-3px); */
     color: #fff;
     text-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
 }
@@ -172,6 +179,7 @@ body {
 
 main {
     flex: 1 0  auto;
+    background-color: #1A1A1A;
 
     /* ЧТО БЫ DIV НЕ ПРОВАЛИВАЛСЯ */
     padding-top: 100px;
@@ -212,7 +220,7 @@ main {
 .footer {
     background-color: #101010; /* Очень темный фон для футера */
     color: #bbb;
-    padding: 30px 30px;
+    padding: 20px 30px;
     text-align: center;
     border-top: 2px solid #0d47a1;
     position: relative;

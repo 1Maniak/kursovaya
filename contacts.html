@@ -31,7 +31,7 @@
             <!-- ДОДЕЛАТЬ ВХОД | РЕГИСТРАЦИЯ И СМЕНИТЬ ВЕЗДЕ ШАПКИ!!!!! -->
             <div class="login-mainheader">
                 <div class="login-header">
-                    <a href="login.html">Вход</a>
+                    <a class="login-header_1" href="login.html">Вход</a>
                     <a href="register.html">Регистрация</a>
                 </div>
             </div>
@@ -79,6 +79,22 @@
                     <script src="JS/form-contact.js"></script>
 
                 </form>
+
+                <div class="social-icons">
+                    <a href="https://t.me/krgutis"><img class="icon" src="photo\icons8-телеграм.svg" alt="Иконка Telegram"></a>
+                    <a href="https://max.ru/id5038005448_biz"><img class="icon" src="photo\max-messenger-sign-logo.svg" alt="Иконка Max"></a>
+                    <a href="https://vk.com/rguts"><img class="icon" src="photo\icons8-vk.svg" alt="Иконка Vk"></a>
+
+                    <!-- <a href="photo\icons8-телеграм.svg" class="icon telegram" title="Telegram">
+                        <i class="fab fa-telegram-plane"></i>
+                    </a>
+                    <a href="#" class="icon max" title="Max">
+                        <i class="fas fa-comment-dots"></i> Заглушка для Max, т.к. прямого шрифта нет
+                    </a>
+                    <a href="#" class="icon vk" title="VK">
+                        <i class="fab fa-vk"></i>
+                    </a> -->
+                </div>
                 
             </div>
 
@@ -86,6 +102,18 @@
 
     </main>
 
+    <section class="map">
+        <div class="text-map_main">
+            <div class="map-text"><h1>Карта</h1></div>
+        </div>
+
+        <div>
+            <div class="line"></div>
+            <div class="theme_dark_map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae5806ff17c8ab5a73880662052ef44f9d229fdda9adc17c1b7b6ce9eff30858b&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=truemyMap.behaviors.disable('scrollZoom');"></script>
+            </div>
+        </div>
+    </section>
 
 
     <!-- FOOTER -->
@@ -93,6 +121,6 @@
         <p>© 2026 РГУТИС. Все права защищены.</p>
     </footer>
 
-<a id="umnico-widget-landing" href="https://umnico.com" target="_blank" rel="noopener" data-config="{&quot;urls&quot;:{&quot;vk&quot;:&quot;vk.com/rguts&quot;,&quot;max&quot;:&quot;max.ru/id5038005448_biz&quot;,&quot;telegram&quot;:&quot;t.me/krgutis&quot;},&quot;hideLogo&quot;:false}">Umnico</a> <script type="text/javascript"> window.umnicoWidgetLandingConfig = {"urls":{"vk":"vk.com/rguts","max":"max.ru/id5038005448_biz","telegram":"t.me/krgutis"},"hideLogo":false}; window.__UMNICO_WIDGET_LANDING_LOAD_NOW__ = true; var landingAnchor = document.getElementById('umnico-widget-landing'); if (landingAnchor && landingAnchor.tagName && landingAnchor.tagName.toLowerCase() === 'a') { var preventAnchorNavigation = function(event) { event.preventDefault(); }; landingAnchor.__umnicoWidgetInlineHandler = preventAnchorNavigation; landingAnchor.addEventListener('click', preventAnchorNavigation); } var x = document.createElement('script'); x.src = 'https://umnico.com/assets/widget-landing-loader.js'; x.type = 'text/javascript'; x.charset = 'UTF-8'; x.async = true; document.body.appendChild(x); </script>
+<!-- <a id="umnico-widget-landing" href="https://umnico.com" target="_blank" rel="noopener" data-config="{&quot;urls&quot;:{&quot;vk&quot;:&quot;vk.com/rguts&quot;,&quot;max&quot;:&quot;max.ru/id5038005448_biz&quot;,&quot;telegram&quot;:&quot;t.me/krgutis&quot;},&quot;hideLogo&quot;:false}">Umnico</a> <script type="text/javascript"> window.umnicoWidgetLandingConfig = {"urls":{"vk":"vk.com/rguts","max":"max.ru/id5038005448_biz","telegram":"t.me/krgutis"},"hideLogo":false}; window.__UMNICO_WIDGET_LANDING_LOAD_NOW__ = true; var landingAnchor = document.getElementById('umnico-widget-landing'); if (landingAnchor && landingAnchor.tagName && landingAnchor.tagName.toLowerCase() === 'a') { var preventAnchorNavigation = function(event) { event.preventDefault(); }; landingAnchor.__umnicoWidgetInlineHandler = preventAnchorNavigation; landingAnchor.addEventListener('click', preventAnchorNavigation); } var x = document.createElement('script'); x.src = 'https://umnico.com/assets/widget-landing-loader.js'; x.type = 'text/javascript'; x.charset = 'UTF-8'; x.async = true; document.body.appendChild(x); </script> -->
 </body>
 </html>
